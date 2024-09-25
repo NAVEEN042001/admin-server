@@ -1,0 +1,17 @@
+apiVersion: automation.cloudbees.io/v1alpha1
+kind: workflow
+name: Naveen
+on:
+  push:
+    branches:
+      - bala
+jobs:
+  Build:
+    steps:
+      - uses: cloudbees-io/checkout@v1
+        name: checkout
+      - uses: docker://maven:3-eclipse-temurin-17
+        name: Build1
+        kind: build
+        run: mvn compile
+        shell: sh
