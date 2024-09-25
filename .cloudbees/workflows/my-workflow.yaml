@@ -4,14 +4,12 @@ name: My workflow
 on:
   push:
     branches:
-      - bala
+      - "Naveen"
 jobs:
   Build:
     steps:
-      - name: Checkout Code
-        uses: cloudbees-io/checkout@v1
       - uses: docker://maven:3-eclipse-temurin-17
         name: Build1
         kind: build
-        run: mvn clean package
+        run: mvn compile 
         shell: sh
