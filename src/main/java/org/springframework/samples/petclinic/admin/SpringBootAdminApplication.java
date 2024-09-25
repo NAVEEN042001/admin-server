@@ -37,7 +37,7 @@ public class SpringBootAdminApplication {
     public static void main(String[] args) {
         try {
             // Initialize the Rox SDK with the feature management environment key
-            Rox.setup("6e3b0d18-4288-4d77-4843-b5a51a72e24b").get();
+            Rox.setup("f856b049-45bf-4c8a-5b57-bcb4969bcd66").get();
 
             // Initialize and register Flags
             Flags.register();
