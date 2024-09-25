@@ -4,7 +4,7 @@ name: My workflow
 on:
   push:
     branches:
-      - "Naveen"
+      - bala
 jobs:
   Build:
     steps:
